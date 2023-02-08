@@ -62,6 +62,10 @@ function setGame() {
         }
 
         e.target.value %= 10;
+
+        if (e.target.value % 10 === 0) {
+          e.target.value = "";
+        }
       });
 
       tile.classList.add("tile");
