@@ -16,19 +16,38 @@
     />
     <script src="sudoku.js"></script>
   </head>
-  <body>
-    <h1>Sudoku Generator and Solver</h1>
+
+  <body class="d-flex flex-column">
+    <h1 class="text-center mt-3">Sudoku Generator</h1>
+    <hr class="mx-auto my-3" />
+
+    <div class="d-flex justify-content-center my-3 gap-4">
+      <button
+        class="btn btn-secondary"
+        onclick="window.location.href = 'index.html'"
+        style="width: 100px"
+      >
+        Generator
+      </button>
+      <button
+        class="btn btn-outline-secondary"
+        onclick="window.location.href = 'solve.html'"
+        style="width: 100px"
+      >
+        Solver
+      </button>
+    </div>
+
+    <!-- 9x9 board -->
+    <div id="board"></div>
+
     <button
-      class="btn btn-secondary"
-      onclick="window.location.href = 'play.html'"
+      id="test"
+      type="button"
+      class="btn btn-secondary mx-auto my-3"
+      style="width: 100px"
     >
-      Generator
-    </button>
-    <button
-      class="btn btn-secondary"
-      onclick="window.location.href = 'solve.html'"
-    >
-      Solver
+      New Grid
     </button>
   </body>
 </html>
